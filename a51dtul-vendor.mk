@@ -23,4 +23,4 @@ PRODUCT_PACKAGES += \
     libqct_resampler \
     libTimeService
 
-$(call inherit-product, vendor/htc/m8qlul/m8qlul-vendor-blobs.mk)
+$(call inherit-product, vendor/htc/a51dtul/a51dtul-vendor-blobs.mk)

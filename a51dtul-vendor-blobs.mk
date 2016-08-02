@@ -180,6 +180,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/htc/a51dtul/proprietary/lib/libcameraface.so:system/lib/libcameraface.so \
     vendor/htc/a51dtul/proprietary/lib/libcamerapp.so:system/lib/libcamerapp.so \
+    vendor/htc/a51dtul/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/htc/a51dtul/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/htc/a51dtul/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/htc/a51dtul/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
@@ -194,6 +195,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib/libhtcsecure.so:system/lib/libhtcsecure.so \
     vendor/htc/a51dtul/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/htc/a51dtul/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/htc/a51dtul/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/htc/a51dtul/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/htc/a51dtul/proprietary/lib/libmmcamera_ait9882proc.so:system/lib/libmmcamera_ait9882proc.so \
     vendor/htc/a51dtul/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -209,36 +211,26 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/htc/a51dtul/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/htc/a51dtul/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec.so:system/lib/libtuning_aec.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_hdr.so:system/lib/libtuning_aec_imx214_htc_hdr.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_hdr_16_9.so:system/lib/libtuning_aec_imx214_htc_hdr_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_night.so:system/lib/libtuning_aec_imx214_htc_night.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_night_16_9.so:system/lib/libtuning_aec_imx214_htc_night_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_qtr.so:system/lib/libtuning_aec_imx214_htc_qtr.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_qtr_16_9.so:system/lib/libtuning_aec_imx214_htc_qtr_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_video.so:system/lib/libtuning_aec_imx214_htc_video.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_videoHFR.so:system/lib/libtuning_aec_imx214_htc_videoHFR.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_video_24fps.so:system/lib/libtuning_aec_imx214_htc_video_24fps.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_video_60fps.so:system/lib/libtuning_aec_imx214_htc_video_60fps.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_zoe.so:system/lib/libtuning_aec_imx214_htc_zoe.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_zsl.so:system/lib/libtuning_aec_imx214_htc_zsl.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_zsl_16_9.so:system/lib/libtuning_aec_imx214_htc_zsl_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_zsl_24fps.so:system/lib/libtuning_aec_imx214_htc_zsl_24fps.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_imx214_htc_zsl_24fps_16_9.so:system/lib/libtuning_aec_imx214_htc_zsl_24fps_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_hdr.so:system/lib/libtuning_aec_s5k5e_htc_hdr.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_hdr_16_9.so:system/lib/libtuning_aec_s5k5e_htc_hdr_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_night.so:system/lib/libtuning_aec_s5k5e_htc_night.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_night_16_9.so:system/lib/libtuning_aec_s5k5e_htc_night_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_qtr.so:system/lib/libtuning_aec_s5k5e_htc_qtr.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_qtr_16_9.so:system/lib/libtuning_aec_s5k5e_htc_qtr_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_video.so:system/lib/libtuning_aec_s5k5e_htc_video.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_zsl.so:system/lib/libtuning_aec_s5k5e_htc_zsl.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_s5k5e_htc_zsl_16_9.so:system/lib/libtuning_aec_s5k5e_htc_zsl_16_9.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_af.so:system/lib/libtuning_af.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_af_lc898212_imx214.so:system/lib/libtuning_af_lc898212_imx214.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_video.so:system/lib/libtuning_aec_ov13850_htc_video.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_night.so:system/lib/libtuning_aec_ov13850_htc_night.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_video_60fps.so:system/lib/libtuning_aec_ov13850_htc_video_60fps.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_zoe.so:system/lib/libtuning_aec_ov13850_htc_zoe.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_videoHFR.so:system/lib/libtuning_aec_ov13850_htc_videoHFR.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov8858_htc_video.so:system/lib/libtuning_aec_ov8858_htc_video.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_hdr.so:system/lib/libtuning_aec_ov13850_htc_hdr.so \
     vendor/htc/a51dtul/proprietary/lib/libtuning_awb.so:system/lib/libtuning_awb.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_awb_imx214_htc.so:system/lib/libtuning_awb_imx214_htc.so \
-    vendor/htc/a51dtul/proprietary/lib/libtuning_awb_s5k5e_htc.so:system/lib/libtuning_awb_s5k5e_htc.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_af_ti201_ov13850_htc_otp.so:system/lib/libtuning_af_ti201_ov13850_htc_otp.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov8858_htc_zsl.so:system/lib/libtuning_aec_ov8858_htc_zsl.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_awb_ov8858_htc.so:system/lib/libtuning_awb_ov8858_htc.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_af_ti201_ov13850_htc.so:system/lib/libtuning_af_ti201_ov13850_htc.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_night_16_9.so:system/lib/libtuning_aec_ov13850_htc_night_16_9.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_af.so:system/lib/libtuning_af.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_zsl.so:system/lib/libtuning_aec_ov13850_htc_zsl.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_awb_ov13850_htc.so:system/lib/libtuning_awb_ov13850_htc.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec.so:system/lib/libtuning_aec.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_hdr_16_9.so:system/lib/libtuning_aec_ov13850_htc_hdr_16_9.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_zsl_16_9.so:system/lib/libtuning_aec_ov13850_htc_zsl_16_9.so \
+    vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov8858_htc_hdr.so:system/lib/libtuning_aec_ov8858_htc_hdr.so \
     vendor/htc/a51dtul/proprietary/lib64/drm/libhtcomaplugin.so:system/lib64/drm/libhtcomaplugin.so \
     vendor/htc/a51dtul/proprietary/lib64/hw/audio.mirrorlink.default.so:system/lib64/hw/audio.mirrorlink.default.so \
     vendor/htc/a51dtul/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
@@ -251,6 +243,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib64/libcamera_af.so:system/lib64/libcamera_af.so \
     vendor/htc/a51dtul/proprietary/lib64/libcamera_awb.so:system/lib64/libcamera_awb.so \
     vendor/htc/a51dtul/proprietary/lib64/libcamera_client.so:system/lib64/libcamera_client.so \
+    vendor/htc/a51dtul/proprietary/lib64/libchromatix_imx135_liveshot.so:system/lib64/libchromatix_imx135_liveshot.so \
     vendor/htc/a51dtul/proprietary/lib64/libcnefeatureconfig.so:system/lib64/libcnefeatureconfig.so \
     vendor/htc/a51dtul/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/htc/a51dtul/proprietary/lib64/libhtc_framework.so:system/lib64/libhtc_framework.so \
@@ -260,14 +253,14 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib64/libhtcflag-jni.so:system/lib64/libhtcflag-jni.so \
     vendor/htc/a51dtul/proprietary/lib64/libhtcqxdm2sd.so:system/lib64/libhtcqxdm2sd.so \
     vendor/htc/a51dtul/proprietary/lib64/libhtcsecure.so:system/lib64/libhtcsecure.so \
+    vendor/htc/a51dtul/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/htc/a51dtul/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/htc/a51dtul/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/htc/a51dtul/proprietary/lib64/libposteffect.so:system/lib64/libposteffect.so \
     vendor/htc/a51dtul/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
     vendor/htc/a51dtul/proprietary/lib64/librmnetctl.so:system/lib64/librmnetctl.so \
-    vendor/htc/a51dtul/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_af.so:system/lib64/libtuning_af.so \
-    vendor/htc/a51dtul/proprietary/lib64/libtuning_af_lc898212_imx214.so:system/lib64/libtuning_af_lc898212_imx214.so \
+    vendor/htc/a51dtul/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_awb.so:system/lib64/libtuning_awb.so \
     vendor/htc/a51dtul/proprietary/lib64/libwifi-hal-qcom.so:system/lib64/libwifi-hal-qcom.so \
     vendor/htc/a51dtul/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
@@ -324,39 +317,39 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830_camera.so:system/vendor/lib/libactuator_ov12830_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ti201_act_camcorder.so:system/vendor/lib/libactuator_ti201_act_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074.so:system/vendor/lib/libactuator_iu074.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13v04b.so:system/vendor/lib/libactuator_dw9714_q13v04b.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov8825_camcorder.so:system/vendor/lib/libactuator_ov8825_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9716_camera.so:system/vendor/lib/libactuator_dw9716_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830_camcorder.so:system/vendor/lib/libactuator_ov12830_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a.so:system/vendor/lib/libactuator_dw9714_q13n04a.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so:system/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_a3907_camcorder.so:system/vendor/lib/libactuator_a3907_camcorder.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_a3907_camera.so:system/vendor/lib/libactuator_a3907_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba.so:system/vendor/lib/libactuator_dw9714_13p1ba.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so:system/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camera.so:system/vendor/lib/libactuator_dw9714_13p1ba_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a.so:system/vendor/lib/libactuator_dw9714_q13n04a.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so:system/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camera.so:system/vendor/lib/libactuator_dw9714_q13n04a_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13v04b.so:system/vendor/lib/libactuator_dw9714_q13v04b.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camcorder.so:system/vendor/lib/libactuator_dw9714_q13v04b_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camera.so:system/vendor/lib/libactuator_dw9714_q13v04b_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba.so:system/vendor/lib/libactuator_dw9714_13p1ba.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9716_camcorder.so:system/vendor/lib/libactuator_dw9716_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9716_camera.so:system/vendor/lib/libactuator_dw9716_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074.so:system/vendor/lib/libactuator_iu074.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074_camcorder.so:system/vendor/lib/libactuator_iu074_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074_camera.so:system/vendor/lib/libactuator_iu074_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_lc898212_act.so:system/vendor/lib/libactuator_lc898212_act.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_lc898212_act_camcorder.so:system/vendor/lib/libactuator_lc898212_act_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_lc898212_act_camera.so:system/vendor/lib/libactuator_lc898212_act_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830.so:system/vendor/lib/libactuator_ov12830.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830_camcorder.so:system/vendor/lib/libactuator_ov12830_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830_camera.so:system/vendor/lib/libactuator_ov12830_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov8825.so:system/vendor/lib/libactuator_ov8825.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov8825_camcorder.so:system/vendor/lib/libactuator_ov8825_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camera.so:system/vendor/lib/libactuator_dw9714_q13n04a_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so:system/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ti201_act_camera.so:system/vendor/lib/libactuator_ti201_act_camera.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov8825_camera.so:system/vendor/lib/libactuator_ov8825_camera.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov12830.so:system/vendor/lib/libactuator_ov12830.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camera.so:system/vendor/lib/libactuator_dw9714_q13v04b_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ti201_act.so:system/vendor/lib/libactuator_ti201_act.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074_camcorder.so:system/vendor/lib/libactuator_iu074_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camera.so:system/vendor/lib/libactuator_dw9714_13p1ba_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_iu074_camera.so:system/vendor/lib/libactuator_iu074_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camera.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_ov8825.so:system/vendor/lib/libactuator_ov8825.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -365,194 +358,192 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_common.so:system/vendor/lib/libchromatix_imx132_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_default_video.so:system/vendor/lib/libchromatix_imx132_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:system/vendor/lib/libchromatix_imx132_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_preview.so:system/vendor/lib/libchromatix_imx132_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:system/vendor/lib/libchromatix_imx132_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_common.so:system/vendor/lib/libchromatix_imx134_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_default_video.so:system/vendor/lib/libchromatix_imx134_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_hfr_120.so:system/vendor/lib/libchromatix_imx134_hfr_120.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_hfr_60.so:system/vendor/lib/libchromatix_imx134_hfr_60.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_preview.so:system/vendor/lib/libchromatix_imx134_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_snapshot.so:system/vendor/lib/libchromatix_imx134_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_common.so:system/vendor/lib/libchromatix_imx135_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_default_video.so:system/vendor/lib/libchromatix_imx135_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:system/vendor/lib/libchromatix_imx135_hfr_120.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:system/vendor/lib/libchromatix_imx135_hfr_60.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_90.so:system/vendor/lib/libchromatix_imx135_hfr_90.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_common.so:system/vendor/lib/libchromatix_imx214_htc_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_default_video.so:system/vendor/lib/libchromatix_imx214_htc_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_hfr.so:system/vendor/lib/libchromatix_imx214_htc_hfr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_htc_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_preview.so:system/vendor/lib/libchromatix_imx214_htc_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_preview_24fps.so:system/vendor/lib/libchromatix_imx214_htc_preview_24fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_htc_video_24fps.so:system/vendor/lib/libchromatix_imx214_htc_video_24fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:system/vendor/lib/libchromatix_imx214_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_common.so:system/vendor/lib/libchromatix_ov13850_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_default_video.so:system/vendor/lib/libchromatix_ov13850_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_120fps.so:system/vendor/lib/libchromatix_ov13850_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_60fps.so:system/vendor/lib/libchromatix_ov13850_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_90fps.so:system/vendor/lib/libchromatix_ov13850_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_preview.so:system/vendor/lib/libchromatix_ov13850_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_snapshot.so:system/vendor/lib/libchromatix_ov13850_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_common.so:system/vendor/lib/libchromatix_ov16825_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_default_video.so:system/vendor/lib/libchromatix_ov16825_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_preview.so:system/vendor/lib/libchromatix_ov16825_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_snapshot.so:system/vendor/lib/libchromatix_ov16825_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common.so:system/vendor/lib/libchromatix_ov2680_5987fhq_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so:system/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview.so:system/vendor/lib/libchromatix_ov2680_5987fhq_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so:system/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_common.so:system/vendor/lib/libchromatix_ov2680_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_default_video.so:system/vendor/lib/libchromatix_ov2680_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_preview.so:system/vendor/lib/libchromatix_ov2680_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_snapshot.so:system/vendor/lib/libchromatix_ov2680_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_common.so:system/vendor/lib/libchromatix_ov2720_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:system/vendor/lib/libchromatix_ov2720_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:system/vendor/lib/libchromatix_ov2720_hfr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:system/vendor/lib/libchromatix_ov2720_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_preview.so:system/vendor/lib/libchromatix_ov2720_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:system/vendor/lib/libchromatix_ov2720_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_common.so:system/vendor/lib/libchromatix_ov5648_oty5f03_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so:system/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_preview.so:system/vendor/lib/libchromatix_ov5648_oty5f03_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so:system/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so:system/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_common.so:system/vendor/lib/libchromatix_ov5648_p5v18g_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_preview.so:system/vendor/lib/libchromatix_ov5648_p5v18g_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so:system/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so:system/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_common.so:system/vendor/lib/libchromatix_ov5648_q5v22e_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_preview.so:system/vendor/lib/libchromatix_ov5648_q5v22e_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so:system/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so:system/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_common.so:system/vendor/lib/libchromatix_ov5670_q5v41b_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so:system/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_preview.so:system/vendor/lib/libchromatix_ov5670_q5v41b_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so:system/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so:system/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:system/vendor/lib/libchromatix_ov8825_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_120fps.so:system/vendor/lib/libchromatix_ov8825_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:system/vendor/lib/libchromatix_ov8825_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:system/vendor/lib/libchromatix_ov8825_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_liveshot.so:system/vendor/lib/libchromatix_ov8825_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_liveshot_hd.so:system/vendor/lib/libchromatix_ov8825_liveshot_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_preview.so:system/vendor/lib/libchromatix_ov8825_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_preview_hd.so:system/vendor/lib/libchromatix_ov8825_preview_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_snapshot.so:system/vendor/lib/libchromatix_ov8825_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_snapshot_hd.so:system/vendor/lib/libchromatix_ov8825_snapshot_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_video_hd.so:system/vendor/lib/libchromatix_ov8825_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_zsl.so:system/vendor/lib/libchromatix_ov8825_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/lib/libchromatix_ov8858_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_hfr_90fps.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/lib/libchromatix_ov8858_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib/libchromatix_ov8858_q8v19w_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib/libchromatix_ov8858_q8v19w_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_common.so:system/vendor/lib/libchromatix_ov8865_q8v18a_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so:system/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_preview.so:system/vendor/lib/libchromatix_ov8865_q8v18a_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:system/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:system/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_common.so:system/vendor/lib/libchromatix_ov9724_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:system/vendor/lib/libchromatix_ov9724_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:system/vendor/lib/libchromatix_ov9724_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_preview.so:system/vendor/lib/libchromatix_ov9724_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:system/vendor/lib/libchromatix_s5k3l1yx_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:system/vendor/lib/libchromatix_s5k3l1yx_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:system/vendor/lib/libchromatix_s5k3l1yx_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:system/vendor/lib/libchromatix_s5k3l1yx_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:system/vendor/lib/libchromatix_s5k3l1yx_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:system/vendor/lib/libchromatix_s5k3l1yx_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:system/vendor/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k5e_htc_common.so:system/vendor/lib/libchromatix_s5k5e_htc_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k5e_htc_default_video.so:system/vendor/lib/libchromatix_s5k5e_htc_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k5e_htc_hfr.so:system/vendor/lib/libchromatix_s5k5e_htc_hfr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k5e_htc_preview.so:system/vendor/lib/libchromatix_s5k5e_htc_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:system/vendor/lib/libchromatix_imx135_hfr_120.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_120fps.so:system/vendor/lib/libchromatix_ov8825_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_hfr_120.so:system/vendor/lib/libchromatix_imx134_hfr_120.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so:system/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_common.so:system/vendor/lib/libchromatix_ov5648_oty5f03_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_preview.so:system/vendor/lib/libchromatix_ov5670_q5v41b_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_hfr_60fps.so:system/vendor/lib/libchromatix_ov13850_htc_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_snapshot.so:system/vendor/lib/libchromatix_ov13850_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_preview.so:system/vendor/lib/libchromatix_ov8865_q8v18a_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib/libchromatix_ov8858_q8v19w_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_htc_common.so:system/vendor/lib/libchromatix_ov8858_htc_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_common.so:system/vendor/lib/libchromatix_ov2720_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_common.so:system/vendor/lib/libchromatix_imx134_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_video_hd.so:system/vendor/lib/libchromatix_ov8825_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:system/vendor/lib/libchromatix_imx132_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_snapshot.so:system/vendor/lib/libchromatix_ov16825_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_htc_default_video.so:system/vendor/lib/libchromatix_ov8858_htc_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:system/vendor/lib/libchromatix_s5k3l1yx_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:system/vendor/lib/libchromatix_s5k3l1yx_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_snapshot.so:system/vendor/lib/libchromatix_ov8825_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:system/vendor/lib/libchromatix_imx132_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_common.so:system/vendor/lib/libchromatix_ov5648_q5v22e_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so:system/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_preview.so:system/vendor/lib/libchromatix_ov8825_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so:system/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:system/vendor/lib/libchromatix_imx214_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so:system/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_zsl.so:system/vendor/lib/libchromatix_ov8825_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_common.so:system/vendor/lib/libchromatix_ov5648_p5v18g_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_default_video.so:system/vendor/lib/libchromatix_ov13850_htc_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_hfr.so:system/vendor/lib/libchromatix_ov13850_htc_hfr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:system/vendor/lib/libchromatix_s5k3l1yx_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_default_video.so:system/vendor/lib/libchromatix_imx132_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so:system/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_common.so:system/vendor/lib/libchromatix_ov5670_q5v41b_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:system/vendor/lib/libchromatix_ov2720_hfr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_60fps.so:system/vendor/lib/libchromatix_ov13850_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:system/vendor/lib/libchromatix_ov8825_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:system/vendor/lib/libchromatix_ov2720_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_preview.so:system/vendor/lib/libchromatix_imx132_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_90.so:system/vendor/lib/libchromatix_imx135_hfr_90.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:system/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_preview.so:system/vendor/lib/libchromatix_ov13850_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_preview.so:system/vendor/lib/libchromatix_imx134_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_preview.so:system/vendor/lib/libchromatix_ov13850_htc_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so:system/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_preview_hd.so:system/vendor/lib/libchromatix_ov8825_preview_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:system/vendor/lib/libchromatix_ov2720_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_liveshot.so:system/vendor/lib/libchromatix_ov8825_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_snapshot_hd.so:system/vendor/lib/libchromatix_ov8825_snapshot_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/lib/libchromatix_ov8858_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_hdr.so:system/vendor/lib/libchromatix_ov13850_htc_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_hfr_60.so:system/vendor/lib/libchromatix_imx134_hfr_60.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_snapshot.so:system/vendor/lib/libchromatix_ov2680_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:system/vendor/lib/libchromatix_ov8825_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:system/vendor/lib/libchromatix_s5k3l1yx_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so:system/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_default_video.so:system/vendor/lib/libchromatix_ov2680_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:system/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common.so:system/vendor/lib/libchromatix_ov2680_5987fhq_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_preview.so:system/vendor/lib/libchromatix_ov5648_oty5f03_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_preview.so:system/vendor/lib/libchromatix_ov9724_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:system/vendor/lib/libchromatix_s5k3l1yx_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_default_video.so:system/vendor/lib/libchromatix_ov16825_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_preview.so:system/vendor/lib/libchromatix_ov5648_q5v22e_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so:system/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_common.so:system/vendor/lib/libchromatix_ov8865_q8v18a_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_snapshot.so:system/vendor/lib/libchromatix_imx134_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:system/vendor/lib/libchromatix_s5k3l1yx_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx132_common.so:system/vendor/lib/libchromatix_imx132_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_default_video.so:system/vendor/lib/libchromatix_imx135_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_common.so:system/vendor/lib/libchromatix_imx135_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_120fps.so:system/vendor/lib/libchromatix_ov13850_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_preview.so:system/vendor/lib/libchromatix_ov16825_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_htc_preview.so:system/vendor/lib/libchromatix_ov8858_htc_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_htc_common.so:system/vendor/lib/libchromatix_ov13850_htc_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:system/vendor/lib/libchromatix_ov9724_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_common.so:system/vendor/lib/libchromatix_ov2680_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_preview.so:system/vendor/lib/libchromatix_ov2680_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib/libchromatix_ov8858_q8v19w_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:system/vendor/lib/libchromatix_ov9724_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_preview.so:system/vendor/lib/libchromatix_ov2720_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_htc_hdr.so:system/vendor/lib/libchromatix_ov8858_htc_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:system/vendor/lib/libchromatix_imx135_hfr_60.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so:system/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_liveshot_hd.so:system/vendor/lib/libchromatix_ov8825_liveshot_hd.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview.so:system/vendor/lib/libchromatix_ov2680_5987fhq_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so:system/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_preview.so:system/vendor/lib/libchromatix_ov5648_p5v18g_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so:system/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov9724_common.so:system/vendor/lib/libchromatix_ov9724_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_default_video.so:system/vendor/lib/libchromatix_ov13850_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov16825_common.so:system/vendor/lib/libchromatix_ov16825_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so:system/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:system/vendor/lib/libchromatix_ov2720_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so:system/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_hfr_90fps.so:system/vendor/lib/libchromatix_ov13850_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_imx134_default_video.so:system/vendor/lib/libchromatix_imx134_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov13850_common.so:system/vendor/lib/libchromatix_ov13850_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:system/vendor/lib/libchromatix_ov8825_hfr_60fps.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
@@ -585,70 +576,67 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:system/vendor/lib/libmmcamera_S5K4E1_13P1BA.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx214_htc.so:system/vendor/lib/libmmcamera_imx214_htc.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov16825.so:system/vendor/lib/libmmcamera_ov16825.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:system/vendor/lib/libmmcamera_ov2680_5987fhq.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2722_yuv.so:system/vendor/lib/libmmcamera_ov2722_yuv.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_p5v18g.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:system/vendor/lib/libmmcamera_ov5648_q5v22e.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:system/vendor/lib/libmmcamera_ov5670_q5v41b.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov7695.so:system/vendor/lib/libmmcamera_ov7695.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w.so:system/vendor/lib/libmmcamera_ov8858_q8v19w.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:system/vendor/lib/libmmcamera_ov8865_q8v18a.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_s5k5e_htc.so:system/vendor/lib/libmmcamera_s5k5e_htc.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_s5k5e_yuv.so:system/vendor/lib/libmmcamera_s5k5e_yuv.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:system/vendor/lib/libmmcamera_S5K4E1_13P1BA.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:system/vendor/lib/libmmcamera_ov8865_q8v18a.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:system/vendor/lib/libmmcamera_ov5648_q5v22e.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov13850_htc.so:system/vendor/lib/libmmcamera_ov13850_htc.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:system/vendor/lib/libmmcamera_ov2680_5987fhq.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8858_htc.so:system/vendor/lib/libmmcamera_ov8858_htc.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w.so:system/vendor/lib/libmmcamera_ov8858_q8v19w.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov16825.so:system/vendor/lib/libmmcamera_ov16825.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_p5v18g.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov7695.so:system/vendor/lib/libmmcamera_ov7695.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:system/vendor/lib/libmmcamera_ov5670_q5v41b.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/htc/a51dtul/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
@@ -743,9 +731,9 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_lc898212_act.so:system/vendor/lib64/libactuator_lc898212_act.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_lc898212_act_camcorder.so:system/vendor/lib64/libactuator_lc898212_act_camcorder.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_lc898212_act_camera.so:system/vendor/lib64/libactuator_lc898212_act_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_ti201_act_camcorder.so:system/vendor/lib64/libactuator_ti201_act_camcorder.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_ti201_act_camera.so:system/vendor/lib64/libactuator_ti201_act_camera.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libactuator_ti201_act.so:system/vendor/lib64/libactuator_ti201_act.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
@@ -755,49 +743,42 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_common.so:system/vendor/lib64/libchromatix_imx214_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_default_video.so:system/vendor/lib64/libchromatix_imx214_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_120fps.so:system/vendor/lib64/libchromatix_imx214_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_60fps.so:system/vendor/lib64/libchromatix_imx214_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_90fps.so:system/vendor/lib64/libchromatix_imx214_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_common.so:system/vendor/lib64/libchromatix_imx214_htc_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_default_video.so:system/vendor/lib64/libchromatix_imx214_htc_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_hfr.so:system/vendor/lib64/libchromatix_imx214_htc_hfr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_hfr_60fps.so:system/vendor/lib64/libchromatix_imx214_htc_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_preview.so:system/vendor/lib64/libchromatix_imx214_htc_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_preview_24fps.so:system/vendor/lib64/libchromatix_imx214_htc_preview_24fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_htc_video_24fps.so:system/vendor/lib64/libchromatix_imx214_htc_video_24fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_liveshot.so:system/vendor/lib64/libchromatix_ov8858_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_zsl.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_htc_common.so:system/vendor/lib64/libchromatix_ov8858_htc_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_common.so:system/vendor/lib64/libchromatix_ov8858_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_snapshot.so:system/vendor/lib64/libchromatix_ov16825_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_htc_default_video.so:system/vendor/lib64/libchromatix_ov8858_htc_default_video.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_liveshot.so:system/vendor/lib64/libchromatix_imx214_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_preview.so:system/vendor/lib64/libchromatix_imx214_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_snapshot.so:system/vendor/lib64/libchromatix_imx214_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_120fps.so:system/vendor/lib64/libchromatix_imx214_hfr_120fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_90fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_90fps.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib64/libchromatix_imx214_snapshot_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_60fps.so:system/vendor/lib64/libchromatix_imx214_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_preview.so:system/vendor/lib64/libchromatix_ov8858_preview.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_video_hdr.so:system/vendor/lib64/libchromatix_imx214_video_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_default_video.so:system/vendor/lib64/libchromatix_ov8858_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_default_video.so:system/vendor/lib64/libchromatix_imx214_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_common.so:system/vendor/lib64/libchromatix_imx214_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_default_video.so:system/vendor/lib64/libchromatix_ov16825_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_snapshot.so:system/vendor/lib64/libchromatix_ov8858_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_60fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_default_video.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_preview.so:system/vendor/lib64/libchromatix_ov16825_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_hfr_90fps.so:system/vendor/lib64/libchromatix_imx214_hfr_90fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_htc_preview.so:system/vendor/lib64/libchromatix_ov8858_htc_preview.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_snapshot.so:system/vendor/lib64/libchromatix_imx214_snapshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_common.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_60fps.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_htc_hdr.so:system/vendor/lib64/libchromatix_ov8858_htc_hdr.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_liveshot.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_imx214_preview.so:system/vendor/lib64/libchromatix_imx214_preview.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov13850_default_video.so:system/vendor/lib64/libchromatix_ov13850_default_video.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_common.so:system/vendor/lib64/libchromatix_ov16825_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_default_video.so:system/vendor/lib64/libchromatix_ov16825_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_preview.so:system/vendor/lib64/libchromatix_ov16825_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov16825_snapshot.so:system/vendor/lib64/libchromatix_ov16825_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_common.so:system/vendor/lib64/libchromatix_ov8858_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_default_video.so:system/vendor/lib64/libchromatix_ov8858_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_60fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_60fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_hfr_90fps.so:system/vendor/lib64/libchromatix_ov8858_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_liveshot.so:system/vendor/lib64/libchromatix_ov8858_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_preview.so:system/vendor/lib64/libchromatix_ov8858_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_default_video.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_120fps.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_120fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_60fps.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_90fps.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_hfr_90fps.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_liveshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_preview.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib64/libchromatix_ov8858_q8v19w_zsl.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_ov8858_snapshot.so:system/vendor/lib64/libchromatix_ov8858_snapshot.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_s5k5e_htc_common.so:system/vendor/lib64/libchromatix_s5k5e_htc_common.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_s5k5e_htc_default_video.so:system/vendor/lib64/libchromatix_s5k5e_htc_default_video.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_s5k5e_htc_hfr.so:system/vendor/lib64/libchromatix_s5k5e_htc_hfr.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libchromatix_s5k5e_htc_preview.so:system/vendor/lib64/libchromatix_s5k5e_htc_preview.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
@@ -825,17 +806,15 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov13850_htc.so:system/vendor/lib64/libmmcamera_ov13850_htc.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_imx214.so:system/vendor/lib64/libmmcamera_imx214.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_imx214_htc.so:system/vendor/lib64/libmmcamera_imx214_htc.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov8858_htc.so:system/vendor/lib64/libmmcamera_ov8858_htc.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov8858_q8v19w.so:system/vendor/lib64/libmmcamera_ov8858_q8v19w.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov16825.so:system/vendor/lib64/libmmcamera_ov16825.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov2722_yuv.so:system/vendor/lib64/libmmcamera_ov2722_yuv.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
+    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_imx214.so:system/vendor/lib64/libmmcamera_imx214.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov7695.so:system/vendor/lib64/libmmcamera_ov7695.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov8858.so:system/vendor/lib64/libmmcamera_ov8858.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_ov8858_q8v19w.so:system/vendor/lib64/libmmcamera_ov8858_q8v19w.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_s5k5e_htc.so:system/vendor/lib64/libmmcamera_s5k5e_htc.so \
-    vendor/htc/a51dtul/proprietary/vendor/lib64/libmmcamera_s5k5e_yuv.so:system/vendor/lib64/libmmcamera_s5k5e_yuv.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/htc/a51dtul/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \

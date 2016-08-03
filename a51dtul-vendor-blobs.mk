@@ -231,6 +231,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_hdr_16_9.so:system/lib/libtuning_aec_ov13850_htc_hdr_16_9.so \
     vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_zsl_16_9.so:system/lib/libtuning_aec_ov13850_htc_zsl_16_9.so \
     vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov8858_htc_hdr.so:system/lib/libtuning_aec_ov8858_htc_hdr.so \
+    vendor/htc/a51dtul/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so \
     vendor/htc/a51dtul/proprietary/lib64/drm/libhtcomaplugin.so:system/lib64/drm/libhtcomaplugin.so \
     vendor/htc/a51dtul/proprietary/lib64/hw/audio.mirrorlink.default.so:system/lib64/hw/audio.mirrorlink.default.so \
     vendor/htc/a51dtul/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
@@ -263,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_awb.so:system/lib64/libtuning_awb.so \
     vendor/htc/a51dtul/proprietary/lib64/libwifi-hal-qcom.so:system/lib64/libwifi-hal-qcom.so \
+    vendor/htc/a51dtul/proprietary/lib64/libyasalgo.so:system/lib64/libyasalgo.so \
     vendor/htc/a51dtul/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/htc/a51dtul/proprietary/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster.b00 \
     vendor/htc/a51dtul/proprietary/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster.b01 \

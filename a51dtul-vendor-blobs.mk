@@ -209,7 +209,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib/libposteffect.so:system/lib/libposteffect.so \
     vendor/htc/a51dtul/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/htc/a51dtul/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    vendor/htc/a51dtul/proprietary/lib/librilutils.so:system/lib/librilutils.so \
+    vendor/htc/a51dtul/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/htc/a51dtul/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_video.so:system/lib/libtuning_aec_ov13850_htc_video.so \
     vendor/htc/a51dtul/proprietary/lib/libtuning_aec_ov13850_htc_night.so:system/lib/libtuning_aec_ov13850_htc_night.so \
@@ -257,7 +257,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/a51dtul/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/htc/a51dtul/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/htc/a51dtul/proprietary/lib64/libposteffect.so:system/lib64/libposteffect.so \
-    vendor/htc/a51dtul/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
+    vendor/htc/a51dtul/proprietary/lib64/libril.so:system/lib64/libril.so \
     vendor/htc/a51dtul/proprietary/lib64/librmnetctl.so:system/lib64/librmnetctl.so \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_af.so:system/lib64/libtuning_af.so \
     vendor/htc/a51dtul/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \

@@ -208,7 +208,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
     vendor/htc/msm8939-common/proprietary/lib/libposteffect.so:system/lib/libposteffect.so \
     vendor/htc/msm8939-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/htc/msm8939-common/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/htc/msm8939-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/htc/msm8939-common/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/htc/msm8939-common/proprietary/lib/libtuning_aec_ov13850_htc_video.so:system/lib/libtuning_aec_ov13850_htc_video.so \
@@ -259,7 +258,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/htc/msm8939-common/proprietary/lib64/libposteffect.so:system/lib64/libposteffect.so \
     vendor/htc/msm8939-common/proprietary/lib64/libril.so:system/lib64/libril.so \
-    vendor/htc/msm8939-common/proprietary/lib64/librmnetctl.so:system/lib64/librmnetctl.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_af.so:system/lib64/libtuning_af.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_awb.so:system/lib64/libtuning_awb.so \

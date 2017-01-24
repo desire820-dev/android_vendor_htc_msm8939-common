@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/htc/msm8939-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/htc/msm8939-common/proprietary/bin/radish:system/bin/radish \
+    vendor/htc/msm8939-common/proprietary/bin/rild:system/bin/rild \
     vendor/htc/msm8939-common/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/htc/msm8939-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/htc/msm8939-common/proprietary/bin/sapd:system/bin/sapd \

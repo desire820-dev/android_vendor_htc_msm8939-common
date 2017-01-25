@@ -21,6 +21,8 @@ PRODUCT_PACKAGES += \
     libloc_ds_api \
     libtime_genoff \
     libqct_resampler \
-    libTimeService
+    libTimeService \
+    libril \
+    libmm-disp-apis
 
 $(call inherit-product, vendor/htc/msm8939-common/msm8939-common-vendor-blobs.mk)

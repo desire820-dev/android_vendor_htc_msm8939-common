@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/htc/msm8939-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/htc/msm8939-common/proprietary/bin/radish:system/bin/radish \
+    vendor/htc/msm8939-common/proprietary/bin/rild:system/bin/rild \
     vendor/htc/msm8939-common/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/htc/msm8939-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/htc/msm8939-common/proprietary/bin/sapd:system/bin/sapd \
@@ -165,6 +166,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib/hw/audio.mirrorlink.default.so:system/lib/hw/audio.mirrorlink.default.so \
     vendor/htc/msm8939-common/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
     vendor/htc/msm8939-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/htc/msm8939-common/proprietary/lib/hw/keystore.msm8916.so:system/lib/hw/keystore.msm8916.so \
     vendor/htc/msm8939-common/proprietary/lib/hw/power.htc.so:system/lib/hw/power.htc.so \
     vendor/htc/msm8939-common/proprietary/lib/hw/power.qcom.so:system/lib/hw/power.qcom.so \
     vendor/htc/msm8939-common/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
@@ -177,7 +179,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib/libcamera_aec.so:system/lib/libcamera_aec.so \
     vendor/htc/msm8939-common/proprietary/lib/libcamera_af.so:system/lib/libcamera_af.so \
     vendor/htc/msm8939-common/proprietary/lib/libcamera_awb.so:system/lib/libcamera_awb.so \
-    vendor/htc/msm8939-common/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/htc/msm8939-common/proprietary/lib/libcameraface.so:system/lib/libcameraface.so \
     vendor/htc/msm8939-common/proprietary/lib/libcamerapp.so:system/lib/libcamerapp.so \
     vendor/htc/msm8939-common/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
@@ -233,6 +234,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib64/drm/libhtcomaplugin.so:system/lib64/drm/libhtcomaplugin.so \
     vendor/htc/msm8939-common/proprietary/lib64/hw/audio.mirrorlink.default.so:system/lib64/hw/audio.mirrorlink.default.so \
     vendor/htc/msm8939-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
+    vendor/htc/msm8939-common/proprietary/lib64/hw/keystore.msm8916.so:system/lib64/hw/keystore.msm8916.so \
     vendor/htc/msm8939-common/proprietary/lib64/hw/power.htc.so:system/lib64/hw/power.htc.so \
     vendor/htc/msm8939-common/proprietary/lib64/hw/power.qcom.so:system/lib64/hw/power.qcom.so \
     vendor/htc/msm8939-common/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.msm8916.so \
@@ -241,7 +243,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib64/libcamera_aec.so:system/lib64/libcamera_aec.so \
     vendor/htc/msm8939-common/proprietary/lib64/libcamera_af.so:system/lib64/libcamera_af.so \
     vendor/htc/msm8939-common/proprietary/lib64/libcamera_awb.so:system/lib64/libcamera_awb.so \
-    vendor/htc/msm8939-common/proprietary/lib64/libcamera_client.so:system/lib64/libcamera_client.so \
     vendor/htc/msm8939-common/proprietary/lib64/libchromatix_imx135_liveshot.so:system/lib64/libchromatix_imx135_liveshot.so \
     vendor/htc/msm8939-common/proprietary/lib64/libcnefeatureconfig.so:system/lib64/libcnefeatureconfig.so \
     vendor/htc/msm8939-common/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
@@ -262,6 +263,10 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib64/libwifi-hal-qcom.so:system/lib64/libwifi-hal-qcom.so \
     vendor/htc/msm8939-common/proprietary/lib64/libyasalgo.so:system/lib64/libyasalgo.so \
     vendor/htc/msm8939-common/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
+    vendor/htc/msm8939-common/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
+    vendor/htc/msm8939-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/htc/msm8939-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/htc/msm8939-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
     vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
     vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
@@ -557,6 +562,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
@@ -566,8 +572,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libhtc_common.so:system/vendor/lib/libhtc_common.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libhtcril_db.so:system/vendor/lib/libhtcril_db.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
@@ -579,10 +588,12 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmasc.so:system/vendor/lib/libmasc.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
@@ -646,7 +657,9 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
@@ -684,6 +697,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libtzplayready.so:system/vendor/lib/libtzplayready.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
@@ -698,6 +712,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libhwdap.so:system/vendor/lib/soundfx/libhwdap.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libswdap.so:system/vendor/lib/soundfx/libswdap.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
@@ -802,6 +818,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
@@ -810,8 +827,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libhtc_common.so:system/vendor/lib64/libhtc_common.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libhtcril_db.so:system/vendor/lib64/libhtcril_db.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
@@ -824,6 +844,9 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-dspp-utils.so:system/vendor/lib64/libmm-dspp-utils.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libmm-qdcm-diag.so:system/vendor/lib64/libmm-qdcm-diag.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmmcamera_ov13850_htc.so:system/vendor/lib64/libmmcamera_ov13850_htc.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmmcamera_ov8858_htc.so:system/vendor/lib64/libmmcamera_ov8858_htc.so \

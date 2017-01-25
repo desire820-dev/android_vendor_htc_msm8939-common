@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/htc/msm8939-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/htc/msm8939-common/proprietary/bin/radish:system/bin/radish \
-    vendor/htc/msm8939-common/proprietary/bin/rild:system/bin/rild \
     vendor/htc/msm8939-common/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/htc/msm8939-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/htc/msm8939-common/proprietary/bin/sapd:system/bin/sapd \
@@ -209,7 +208,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
     vendor/htc/msm8939-common/proprietary/lib/libposteffect.so:system/lib/libposteffect.so \
     vendor/htc/msm8939-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/htc/msm8939-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/htc/msm8939-common/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/htc/msm8939-common/proprietary/lib/libtuning_aec_ov13850_htc_video.so:system/lib/libtuning_aec_ov13850_htc_video.so \
     vendor/htc/msm8939-common/proprietary/lib/libtuning_aec_ov13850_htc_night.so:system/lib/libtuning_aec_ov13850_htc_night.so \
@@ -258,26 +256,33 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/htc/msm8939-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/htc/msm8939-common/proprietary/lib64/libposteffect.so:system/lib64/libposteffect.so \
-    vendor/htc/msm8939-common/proprietary/lib64/libril.so:system/lib64/libril.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_af.so:system/lib64/libtuning_af.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_aec.so:system/lib64/libtuning_aec.so \
     vendor/htc/msm8939-common/proprietary/lib64/libtuning_awb.so:system/lib64/libtuning_awb.so \
     vendor/htc/msm8939-common/proprietary/lib64/libwifi-hal-qcom.so:system/lib64/libwifi-hal-qcom.so \
     vendor/htc/msm8939-common/proprietary/lib64/libyasalgo.so:system/lib64/libyasalgo.so \
     vendor/htc/msm8939-common/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster.b00 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster.b01 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b02:system/vendor/firmware/keymaster.b02 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b03:system/vendor/firmware/keymaster.b03 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.mdt:system/vendor/firmware/keymaster.mdt \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/libpn547_fw.so:system/vendor/firmware/keymaster/libpn547_fw.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/drm/libdrmprplugin.so:system/vendor/lib/drm/libdrmprplugin.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libESXEGL_adreno.so:system/vendor/lib/egl/libESXEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib/egl/libESXGLESv1_CM_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libESXGLESv2_adreno.so:system/vendor/lib/egl/libESXGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
@@ -570,6 +575,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmasc.so:system/vendor/lib/libmasc.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
@@ -693,10 +699,18 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libESXEGL_adreno.so:system/vendor/lib64/egl/libESXEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libESXGLESv2_adreno.so:system/vendor/lib64/egl/libESXGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libRBEGL_adreno.so:system/vendor/lib64/egl/libRBEGL_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib64/egl/libRBGLESv1_CM_adreno.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
@@ -803,6 +817,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/liblistensoundmodel2.so:system/vendor/lib64/liblistensoundmodel2.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/htc/msm8939-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmasc.so:system/vendor/lib64/libmasc.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \

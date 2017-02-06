@@ -267,12 +267,12 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm8939-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/htc/msm8939-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/htc/msm8939-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
-    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster/libpn547_fw.so:system/vendor/firmware/keymaster/libpn547_fw.so \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster.b00 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster.b01 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b02:system/vendor/firmware/keymaster.b02 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.b03:system/vendor/firmware/keymaster.b03 \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/keymaster.mdt:system/vendor/firmware/keymaster.mdt \
+    vendor/htc/msm8939-common/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/drm/libdrmprplugin.so:system/vendor/lib/drm/libdrmprplugin.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/htc/msm8939-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
